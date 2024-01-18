@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   question: How did Luffy get the scar under his eye?
+  answers:
+  - Attacked by bandits
+  - Fight with an animal
+  - Himself
+  - Fight witjh another villager
+  correctAnswer: 2

@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   question: 'Who was the first villain to defeat Luffy? '
+  answers:
+  - Arlong
+  - Crocodile
+  - Don Krieg
+  - Buggy
+  correctAnswer: 1

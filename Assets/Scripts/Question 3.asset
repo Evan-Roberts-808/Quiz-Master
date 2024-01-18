@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Who was the first member of the SH crew to try and recruit a new member
     besides Luffy?
+  answers:
+  - Usopp
+  - Zoro
+  - Sanji
+  - Nami
+  correctAnswer: 3

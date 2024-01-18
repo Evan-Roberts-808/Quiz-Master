@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Who promised that they would never lose another fight until they defeated
     a certain someone?
+  answers:
+  - Luffy
+  - Sanji
+  - Zoro
+  - Usopp
+  correctAnswer: 2
