@@ -6,17 +6,33 @@ using TMPro;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Questions")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
+    
+    [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
     int correctAnswerIndex;
+
+    [Header("Sprites")]
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
+
+    [Header("Timer")]
+    [SerializeField] Image timerImage;
+    Timer timer;
 
     // Start is called before the first frame update
     private void Start()
     {
+        timer = FindObjectOfType<Timer>();
         DisplayQuestion();
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        timerImage.fillAmount = timer.fillFraction;
     }
 
     private void GetNextQuestion() {
@@ -72,11 +88,5 @@ public class Quiz : MonoBehaviour
             Image buttonImage = answerButtons[i].GetComponent<Image>();
             buttonImage.sprite = defaultAnswerSprite;
         }
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-
     }
 }
